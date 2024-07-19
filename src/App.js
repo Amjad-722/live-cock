@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import LiveClock from './Components/LiveClock/LiveClock';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Live Clock</h1>
+      <p>Current Time in New York:</p>
+      <LiveClock timeZone="America/New_York" />
+      <p>Current Time in London:</p>
+      <LiveClock timeZone="Europe/London" />
+      <p>Current Time in Tokyo:</p>
+      <LiveClock timeZone="Asia/Tokyo" />
     </div>
   );
-}
+};
 
 export default App;
