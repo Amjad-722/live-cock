@@ -3,8 +3,8 @@ import LiveClock from './Components/LiveClock/LiveClock';
 
 const App = () => {
   return (
-    <div>
-      <h1>Live Clock</h1>
+    <div className='flex justify-center items-center flex-col'>
+      <h1 className='font-extrabold from-neutral-950 '> Live Clock</h1>
       <p>Current Time in New York:</p>
       <LiveClock timeZone="America/New_York" />
       <p>Current Time in London:</p>
