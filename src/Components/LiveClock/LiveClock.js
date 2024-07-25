@@ -12,7 +12,7 @@ const LiveClock = ({ timeZone }) => {
     return () => clearInterval(intervalId);
   }, [timeZone]);
 
-  return <div>{time}</div>;
+  return <div className="p-2 border border-gray-300 rounded-md text-center bg-gray-100 text-gray-800 font-mono">{time}</div>;
 };
 
 export default LiveClock;
