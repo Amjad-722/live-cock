@@ -4,7 +4,7 @@ import LiveClock from './Components/LiveClock/LiveClock';
 const App = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-slate-700">
-    <div className="flex flex-col justify-center items-center border-spacing-4 pt-48 shadow-xl shadow-red-700 bg-zinc-500   p-28 rounded-lg">
+    <div className="flex flex-col justify-center items-center border-spacing-6 pt-36 shadow-xl shadow-red-700 bg-zinc-500   p-28 rounded-lg border-red-600">
  
       
       
@@ -12,7 +12,7 @@ const App = () => {
       
       <p className="mt-6  text-white font-medium text-lg mb-2">Current Time in London:</p>
  
-      <LiveClock timeZone="Europe/London" />
+      <LiveClock timeZone="Europe/London" className="border-2 border-violet-800" />
       <p className="mt-4  text-white  text-lg  font-medium mb-2">Current Time in Tokyo:</p>
       <LiveClock timeZone="Asia/Tokyo" />
     </div>
